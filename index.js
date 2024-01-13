@@ -1,12 +1,15 @@
-// function sayHelloTo(firstName = `Andrew`) {
-//     console.log(`Hello, ${firstName}!`);
-//   }
+function introduction(name =  `Andrew`) {
+    console.log(`Hi, my name is ${name}.`);
+}
+introduction();
 
-//   sayHelloTo()
+function introductionWithLanguage(name, language) {
+    console.log(`Hi, my name is ${name} and I'm learning to program in ${language}.`);
+}
+introductionWithLanguage('Andrew', 'JavaScript');
 
 
-  function introductionWithLanguageOptional(name = `Andrew`, language = `JavaScript`)  {
-    console.log(`Hi, my name is ${name}, and im learning ${language}.`);
+  function introductionWithLanguageOptional(name, language = `JavaScript`)  {
+    console.log(`Hi, my name is ${name} and I'm learning to program in ${language}.`);
   }
-
-introductionWithLanguageOptional()
+introductionWithLanguageOptional(`Andrew`);
